@@ -1,0 +1,126 @@
+body {
+	overflow: hidden;
+}
+.content {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	background-image: url("../../images/otherimgs/014.png");
+	overflow: auto;
+}
+.header {
+	height: 684px;
+	width: 100%;
+	
+}
+.header>.main {
+	
+	margin: 60px auto;
+	width: 283px;
+	height: 100%;
+	display: flex;
+	margin-bottom: 10px;
+	flex-direction: column;
+}
+h4 {
+	height: 54px;
+	text-align: center;
+	font-size: 24px;
+	color: #666666;
+}
+.phone {
+	height: 55px;
+	font-size: 16px;
+	color: #9b9b9b;
+	border-bottom: 1px solid #9b9b9b;
+}
+.ab {
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid #9b9b9b;
+	align-items: center;
+}
+.ab>.code2 {
+	height: 55px;
+	font-size: 16px;
+	color: #9b9b9b;
+}
+.ab>.code {
+	color: #c49c33;
+	font-size: 14px;
+}
+.btn-login-phone {
+	height: 48px;
+	width: 100%;
+	border-radius: 20px;
+	background-color:  #ffa73c;
+	margin-top: 30px;
+	color: white;
+	font-size: 16px;
+    font-weight: bold;
+}
+.login2 {
+	font-size: 16px;
+	height: 47px;
+	line-height: 47px;
+	border-radius: 20px;
+	width: 100%;
+	text-align: center;
+	background-color: #0000000f;
+	color: #666666;
+	margin-top: 15px;
+}
+.main>.none {
+	font-size: 14px;
+   height: 54px;
+    line-height: 54px;
+    text-align: center;
+   color: #9b9b9b;
+}
+.main>p {
+	font-size: 13px;
+	height: 54px;
+     line-height: 54px;
+	 text-align: center;
+	color: #666666;
+}
+.main>ul {
+	margin-top: 50px;
+	height: 54px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+.main>ul>li>a>i {
+	font-size: 40px;
+}
+i.icon-weibo {
+	color: #f30000;
+}
+.icon-zhifubao {
+	color: #007AFF;
+}
+.icon-weixin {
+	color: green;
+}
+.icon-pingguo1 {
+	color: #000000;
+}
+/* 页脚 */
+.footer {
+	width: 100%;
+	height: 90px;
+}
+.footer>ul {
+	display: flex;
+	flex-direction: row;
+}
+.footer>ul>li {
+	font-size: 14px;
+	color: #9b9b9b;
+	margin-left: 12px;
+}
+.footer>ul>li.one {
+	color: #4a4a4a;
+}

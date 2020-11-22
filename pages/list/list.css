@@ -1,0 +1,217 @@
+.page-container {
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+	display: flex;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.page-header {
+	flex-shrink: 0;
+}
+.page-header-top {
+	display: flex;
+	height: 45px;
+	line-height: 45px;
+	margin-left: 10px;
+	margin-right: 10px;
+	align-items: center;
+}
+.page-header-order {
+	height: 36px;
+}
+.page-content {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	overflow: auto;
+	overflow: hidden;
+	touch-action: pan-y;
+}
+
+.page-header-top>a {
+	display: flex;
+	justify-content: space-between;
+	width: 32px;
+	font-size: 32px;
+	margin-right: 10px;
+}
+.page-header-top>.search {
+	width: 272px;
+	height: 32px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+.page-header-top>i {
+  font-size: 24px;
+  margin-left: 15px;
+}
+.page-header-order {
+	display: flex;
+	flex-grow: 1;
+	height: 36px;
+}
+.page-header-order>i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 33.333333%;
+	font-size: 21px;
+	color: red;
+}
+.page-header-order>span {
+	width: 33.333333%;
+	display: flex;
+	font-size: 16px;
+	justify-content: center;
+	align-items: center;
+}
+.page-header-order>span.active {
+	color: red;
+}
+p.info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	width: 100%;
+	height: 20px;
+	font-size: 13px;
+	background-color: #fff;
+}
+
+/* 商品展示 */
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+}
+.list>li {
+	width: 100%;
+	height: 146px;
+}
+.list>li>a {
+	display: flex;
+	box-sizing: border-box;
+	padding: 10px;
+}
+.list>li>a>.detail {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.list>li>a>.img {
+	background-color: rgba(0,0,0,0.02);
+	border-radius: 10px;
+}
+.list>li>a>div>img {
+	width: 126px;
+	height: 126px;
+}
+.list>li>a>.detail>.detail-top>p {
+	font-size: 15px;
+	color: #333333;
+	margin-top: 10px;
+}
+.list>li>a>.detail>.detail-top>span {
+	font-size: 13px;
+	color: #999999;
+	margin-top: 10px;
+}
+.list>li>a>.detail>.detail-bottom>p {
+	font-size: 17px;
+	color: #ef1111;
+	margin-top: 10px;
+}
+.list>li>a>.detail>.detail-bottom>span.sale,
+.list>li>a>.detail>.detail-bottom>span.rate
+{    
+	font-size: 12px;
+	color: #999999;
+}
+/* 切换另一种 */
+.card {
+	box-sizing: border-box;
+	padding: 0 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-grow: 1;
+	flex-basis: 0;
+	background-color: #EEEEEE;
+}
+.card>li {
+	width: 48%;
+	height: 276px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+.card>li>a {
+	width: 172px;
+	height: 276px;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.card>li>a>.detail {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.card>li>a>.img {
+	height: 138px;
+	width: 172px;
+	line-height: 172px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	text-align: center;
+	
+}
+.card>li>a>div>img {
+	width: 138px;
+	height: 138px;
+}
+.card>li>a>.detail>.detail-top>p {
+	font-size: 15px;
+	color: #333333;
+	
+}
+.card>li>a>.detail>.detail-top>span {
+	font-size: 13px;
+	color: #999999;
+	
+}
+.card>li>a>.detail>.detail-bottom>p {
+	font-size: 17px;
+	color: #ef1111;
+}
+.card>li>a>.detail>.detail-bottom>span.sale,
+.card>li>a>.detail>.detail-bottom>span.rate
+{    
+	font-size: 12px;
+	color: #999999;
+	margin-left: 10px;
+}
+
+
+/* 返回顶部样式 */
+i.rocket {
+	position: fixed;
+	bottom: 50px;
+	right: 10px;
+	z-index: 888;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	line-height: 50px;
+	font-size: 24px;
+	color: white;
+	display: none;
+}

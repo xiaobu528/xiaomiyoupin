@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			.scroll {
+				width: 400px;
+				height: 400px;
+				border: 1px solid black;
+				margin: 100 auto;
+				overflow: hidden;
+				touch-action: pan-y;
+				/* touch-action: pan-x; */
+			}
+		</style>
+		<!-- <script type="text/javascript">
+			window.PointerEvent = undefined;
+		</script> -->
+		<title>IScroll学习</title>
+	</head>
+	<body>
+		<div class="scroll">
+			
+			<div class="scroll-content">
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+				1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>v1<br>
+			<button type="button">返回顶部</button>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="../assets/js/iscroll-probe.js">
+			
+		</script>
+		<script >
+			var scroll = new IScroll(document.querySelector(".scroll"),{
+			  deceleration: 0.003,  //滚动的摩擦系数
+			  bounce: false,   //关闭回弹效果
+			  momentum: false,   //关闭惯性滚动
+			   click: true  ,//取消滚动区域禁用点击事件
+			   probeType: 2  ,  //指定scroll事件的触发频率
+			   // scrollX: true,
+			   // scrollY: false
+			   });
+	 //    scroll.on('scroll', function(){
+		// 	console.log(this.y);
+		// 	console.log(this.maxScrollY);
+		// });
+		// scroll.on("scrollEnd",function(){
+		// 	console.log("滚动结束");
+		// });
+		// document.querySelector("button").onclick = function(){
+		// 	scroll.scrollTo(0,0,500); 
+		// };
+		</script>
+	</body>
+</html>
